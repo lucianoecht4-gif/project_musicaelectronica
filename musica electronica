@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Eventos Electronicos</title>
+</head>
+
+<body>
+<header>
+  <h1>Eventos Electronicos</h1>
+
+  <nav>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Eventos</a></li>
+      <li><a href="#">DJs</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+
+  <section>
+    <h2>Encontra tu proxima fiesta</h2>
+    <p>Eventos, DJs, fechas y lugares en un solo sitio.</p>
+    <a href="#">Explorar eventos</a>
+  </section>
+<section>
+  <h2>Eventos destacados</h2>
+
+  <article>
+    <h3>Evento 1</h3>
+    <p>Fecha - Lugar</p>
+    <a href="#">Ver mas</a>
+  </article>
+
+  <article>
+    <h3>Evento 2</h3>
+    <p>Fecha - Lugar</p>
+    <a href="#">Ver mas</a>
+  </article>
+
+  <article>
+    <h3>Evento 3</h3>
+    <p>Fecha - Lugar</p>
+    <a href="#">Ver mas</a>
+  </article>
+</section>
+<section>
+  <h2>DJs destacados</h2>
+
+  <article>
+    <h3>DJ 1</h3>
+  </article>
+
+  <article>
+    <h3>DJ 2</h3>
+  </article>
+
+  <article>
+    <h3>DJ 3</h3>
+  </article>
+</section>
+</main>
+<footer>
+  <p>Instagram - Contacto - Informacion</p>
+</footer>
+</body>
+
+</html>
