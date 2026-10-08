@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+
+/* ------------------------------
+   CONFIGURACIÓN GENERAL
+-------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0B0B0F;
+    color: #F5F5F5;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ------------------------------
+   HEADER
+-------------------------------- */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 7%;
+
+    background-color: #111116;
+
+    border-bottom: 1px solid #292934;
+}
+
+header > a {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+
+    color: #A970FF;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #A970FF;
+}
+
+
+/* ------------------------------
+   MAIN
+-------------------------------- */
+
+main {
+    width: 86%;
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+
+/* ------------------------------
+   SECCIONES
+-------------------------------- */
+
+section {
+    padding: 70px 0;
+}
+
+section h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+section > p {
+    max-width: 650px;
+    margin-bottom: 30px;
+
+    color: #C7C7CF;
+}
+
+
+/* ------------------------------
+   BOTONES
+-------------------------------- */
+
+section > a,
+article a,
+aside a {
+    display: inline-block;
+
+    background-color: #8B5CF6;
+    color: white;
+
+    padding: 12px 22px;
+    margin-top: 12px;
+
+    border-radius: 6px;
+
+    font-weight: 600;
+}
+
+section > a:hover,
+article a:hover,
+aside a:hover {
+    background-color: #A970FF;
+}
+
+
+/* ------------------------------
+   TARJETAS
+-------------------------------- */
+
+article {
+    display: inline-block;
+    vertical-align: top;
+
+    width: 30%;
+
+    margin-right: 2%;
+    margin-bottom: 30px;
+
+    padding: 22px;
+
+    background-color: #16161D;
+
+    border: 1px solid #292934;
+    border-radius: 10px;
+}
+
+article div {
+    height: 170px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    background-color: #23232D;
+    color: #8C8C99;
+
+    border-radius: 6px;
+}
+
+article h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+article p {
+    color: #B7B7C0;
+    margin-bottom: 6px;
+}
+
+
+/* ------------------------------
+   ASIDE
+-------------------------------- */
+
+aside {
+    margin: 50px 0;
+
+    padding: 30px;
+
+    background-color: #15151C;
+
+    border-left: 4px solid #8B5CF6;
+}
+
+aside h2 {
+    margin-bottom: 20px;
+}
+
+aside a {
+    margin-right: 10px;
+}
+
+
+/* ------------------------------
+   FORMULARIO CONTACTO
+-------------------------------- */
+
+form {
+    max-width: 600px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+label {
+    font-weight: 600;
+}
+
+input,
+textarea {
+    width: 100%;
+
+    padding: 14px;
+
+    background-color: #16161D;
+    color: white;
+
+    border: 1px solid #343440;
+    border-radius: 6px;
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+button {
+    width: fit-content;
+
+    padding: 12px 25px;
+
+    margin-top: 10px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #8B5CF6;
+    color: white;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #A970FF;
+}
+
+
+/* ------------------------------
+   FOOTER
+-------------------------------- */
+
+footer {
+    margin-top: 70px;
+
+    padding: 35px 7%;
+
+    background-color: #111116;
+
+    border-top: 1px solid #292934;
+
+    display: flex;
+    gap: 30px;
+
+    color: #A7A7B0;
+}
+
+footer p {
+    margin-right: auto;
+}
+
+
+/* ------------------------------
+   RESPONSIVE
+-------------------------------- */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section h1 {
+        font-size: 40px;
+    }
+
+    article {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
