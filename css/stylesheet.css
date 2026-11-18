@@ -307,11 +307,183 @@ footer p {
     }
 
     article {
-        width: 100%;
-        margin-right: 0;
+        width: 46%;
+        margin-right: 2%;
+        vertical-align: top;
     }
 
     footer {
         flex-direction: column;
+       
+}
+
+article img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+    }
+}
+@media (max-width: 320px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    main {
+        padding: 25px 15px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+    }
+    article img {
+    width: 100%;
+    margin-right: 0;
+    height: 220px;
+    object-fit: cover;
+}
+article {
+    width: 100%;
+    margin-right: 0;
+    display: block;
+}
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+@media (max-width: 320px) {
+    article {
+        width: 100% !important;
+        margin-right: 0 !important;
+        display: block !important;
+    }
+
+    article img {
+        width: 100% !important;
+        height: 220px !important;
+        object-fit: cover;
+    }
+}
+/**portfolio**/
+.section-portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-principal .galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 15.625rem);
+    grid-template-areas: 
+        "pic1 pic1 pic1 pic1"
+        "pic2 pic3 pic3 pic3"
+        "pic2 pic4 pic5 pic6";
+        width: 80%;
+        gap: .3125rem;
+    }
+.section-principal .galeria img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pic1 {
+    grid-area: pic1;
+}
+.pic2 {
+    grid-area: pic2;
+}
+.pic3 {
+    grid-area: pic3;
+}
+.pic4 {
+    grid-area: pic4;
+}
+.pic5 {
+    grid-area: pic5;
+}
+.pic6 {
+    grid-area: pic6;
+}
+
+/* PORTFOLIO PERSONAL */
+
+.portfolio-header {
+    background-color: #292929;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.portfolio-header h1 {
+    margin-bottom: 15px;
+}
+
+.portfolio-header a,
+.portfolio-footer a {
+    color: #75bce8;
+    text-decoration: underline;
+}
+
+.portfolio-presentacion {
+    padding: 40px 25px;
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.portfolio-presentacion h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.portfolio-presentacion p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.portfolio-footer {
+    background-color: #292929;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.portfolio-footer p {
+    margin-bottom: 12px;
+}
+
+@media (max-width: 768px) {
+    .portfolio-presentacion {
+        padding: 25px 15px;
+    }
+
+    .portfolio-presentacion h2 {
+        font-size: 24px;
+    }
+
+    .portfolio-presentacion p {
+        font-size: 15px;
     }
 }
